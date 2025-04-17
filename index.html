@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.css">
+
+
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+</head>
+<body>
+
+
+    <div class="overlay-9 position-fixed">
+      <a href="..."><i class="fa-brands fa-square-facebook if"></i></a>
+      <br>
+      <a href="..."><i class="fa-brands fa-square-whatsapp" ></i></a>
+      <br>
+      <a href="..."><i class="fa-brands fa-square-twitter" ></i></a>
+      <br>
+      <a href="..."><i class="fa-brands fa-linkedin" ></i></a>
+      <br>
+      <a href="..."><i class="fa-brands fa-square-instagram"></i></a>
+    </div>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light  bg-light fixed-top non" style="z-index: 4999;">
+      <div class="container-fluid">
+        <!-- لو حبيت اعمل مسافات من ع الجنب 
+هخليه container  بس يعني 90% -->
+          <img class="border rounded-circle" src="images/i11.jpg" alt="#"  width="50px" height="50px">
+        <a class="navbar-brand text-secondary ms-4 pe-2 border-end border-2 fs-4" href="#" style="color:#9c6644">Backery</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-secondary" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class=" trip nav-link dropdown-toggle text-secondary border border-2 rounded-3 border-secondary aitalic " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Types
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item text-dark" href="#">Nuetella cake</a></li>
+                <li><a class="dropdown-item text-dark" href="#">Fruits cake</a></li>
+                <li><hr class="dropdown-divider text-dark"></li>
+                <li><a class="dropdown-item text-dark" href="#">Russian honey cake</a></li>
+                <li><a class="dropdown-item text-dark" href="#">Snow white cake</a></li>
+                <li><a class="dropdown-item text-dark" href="#"> Macaroon cake</a></li>
+                <li><a class="dropdown-item text-dark" href="#">Jam roll cake</a></li>
+                <li><a class="dropdown-item text-dark a-to-link" href="#">More</a></li>
+                
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled text-secondary" href="#" tabindex="-1" aria-disabled="true">About</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light me-2  border rounded-3" type="submit" style="background-color:#9c6644;">Search</button>
+            <button  class="btn btn-outline-light  border rounded-3 " type="submit" data-bs-toggle="modal" data-bs-target="#loginModal" style="background-color:#9c6644;">Login</button> 
+
+            <div class="modal fade"  id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+              <div class="  modal-dialog " >
+                  <div class="  modal-content ">
+                      <div class="  modal-header" style="background-color:#9c6644;">
+                          <h5 class="modal-title text-light " id="loginModalLabel"> Login </h5>
+                          <button type="button" class="btn-close border" data-bs-dismiss="modal" aria-label="Close" style="background-color:#9c6644;"></button>
+                      </div>
+                      <div class="modal-body">
+                          <form>
+                              <div class="mb-3">
+                                  <label for="email" class="form-label text-dark"> Email address</label>
+                                  <input type="email" class="form-control border rounded-3 border-dark" id="email" required >
+                                  <p>we'll never share your email with anyone else.</p>
+                              </div>
+                              <div class="mb-3">
+                                  <label for="password" class="form-label text-dark" ;>Password </label>
+                                  <input type="password" class="form-control border rounded-3 border-dark" id="password" required>
+                              </div>
+
+                              <div class="form-check form-switch">
+                                  <input class="form-check-input " type="checkbox" id="flexSwitchCheckChecked" checked  style="background-color:#9c6644";>
+                                  <label class="form-check-label " for="flexSwitchCheckChecked">Remember me</label>
+                                </div>
+                          </form>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-info me-auto"  data-bs-dismiss="modal" style="background-color:#9c6644;">Login</button>
+                          <button type="button" class="btn btn-info" style="background-color:#9c6644;"> Close</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+
+    
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+
+
+      <div class="carousel-item active">
+        <img src="images/kek4.jpg" class="img1 d-block" alt="Garden_of_Gethsemane">
+        <div class="carousel-caption  d-md-block ">
+          <h5>German Chocolate Cake</h5>
+          <p >Indulge in the rich, velvety goodness of our chocolate cake – a slice of heaven in every bite!</p>
+          <button class="border-0 rounded text-light" style="background-color: #9c6644;"> Visit Us </button>
+        </div>
+      </div>
+
+
+
+      <div class="carousel-item">
+        <img src="images/kek2.jpg" class="img1 d-block" alt="Garden_of_Gethsemane">
+        <div class="carousel-caption  d-md-block">
+            <h5>Elegant Birthday Cake</h5>
+            <p >Indulge in the rich, velvety goodness of our chocolate cake – a slice of heaven in every bite!</p>
+            <button class=" border-0 rounded text-light" style="background-color:#9c6644;"> Visit Us </button>
+        </div>
+      </div>
+
+
+      <div class="carousel-item">
+        <img src="images/kek1.jpg" class="img1 d-block" alt="Garden_of_Gethsemane">
+        <div class="carousel-caption  d-md-block">
+            <h5>Elegant Birthday Cake</h5>
+            <p >Indulge in the rich, velvety goodness of our chocolate cake – a slice of heaven in every bite!</p>
+            <button class=" border-0 rounded text-light" style="background-color:#9c6644;"> Visit Us </button>
+        </div>
+      </div>
+
+
+
+
+      <div class="carousel-item w-100">
+        <img src="images/kek9.jpg" class="img1 d-block " alt="Kidron_Valley">
+        <div class="carousel-caption  d-md-block">
+            <h5>Cookies Brownies</h5>
+            <p >Indulge in the rich, velvety goodness of our chocolate cake – a slice of heaven in every bite!</p>
+            <button class="border-0 rounded text-light" style="background-color: #9c6644;"> Visit Us </button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container-fluid  rounded-bottom" style=" background-color:#83552d;">
+    <h4 class="text-light" >WELCOME</h4>
+    <p class="text-light " >Welcome to our chocolate cake shop, where every bite is a delightful experience! <br>Enjoy the rich flavors and indulge in the sweetest moments with us!</p>
+    <button  class="btn11  border-0 rounded " style="height: 30px;" >Learn more</button>
+    <br> <br>
+  </div>
+  <hr>
+
+  <div class="container-fluid divtwo"  style="background-color: #83552d;">
+    <h2 class="text-light">Some Opinions From Our Dear Customers.</h2>
+  </div>
+
+  <br>
+ <div class="accordion accordion-flush" id="accordionFlushExample" style="box-shadow: 1px 1px 20px 20px 20px gray;">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed shadow-lg" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Emily Johnson
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">"The chocolate cake from this shop is absolutely divine! It's rich,moist, and the perfect treat for any occasion."</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed shadow-lg" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          James Smith
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body"> "I can't get enough of their chocolate cake! Every bite is a burst of flavor, and it's definitely my new favorite dessert."
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed shadow-lg" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          Sarah Brown
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">"This shop has the best chocolate cake I've ever tasted! It's a must-try for anyone who loves chocolate."</div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <hr>
+
+  
+
+
+
+  <div class="container-fluid  rounded " style="background-color: #83552d;">
+    <h2 class=" text-light p-3 text-center">Translate From Arabic To English</h2>
+  </div>
+  <div class="container-fluid text-light  rounded-bottom" style="height: 250px; background-color: #83552d;">
+  
+    <p class=" p1 ms-1 fs-5">Write and Translate <code class="text- fs-5" style="color:black;">Press Here</code> </p>
+
+      
+    <button id="myButton" type="button" class="btn btn-light ms-1"  data-bs-toggle="tooltip" data-bs-placement="right"  title="Copied">Copy</button>
+    
+    <textarea class="  mt-4 rounded-2 border-0 col-12" placeholder=" translate:" cols="170" rows="5"  name="" id=""></textarea>
+
+  </div>
+  <hr>
+  <div class="container-fluid  rounded " style="background-color: #83552d;">
+    <h2 class=" text-light p-3 text-center">Translate From Arabic To Frensh</h2>
+  </div>
+  <div class="container-fluid text-light  rounded-bottom" style="height: 250px; background-color: #83552d;">
+  
+    <p class=" p1 ms-1 fs-5">Write and Translate <code class="text- fs-5" style="color:black;">Press Here</code> </p>
+
+      
+    <button id="myButton" type="button" class="btn btn-light ms-1"  data-bs-toggle="tooltip" data-bs-placement="right"  title="Copied">Copy</button>
+    
+    <textarea class="  mt-4 rounded-2 border-0 col-12" placeholder=" translate:" cols="170" rows="5"  name="" id=""></textarea>
+
+  </div>
+  <hr>
+
+
+  <div class="container-fluid  rounded " style="background-color: #83552d;">
+    <h2 class=" text-light p-3 text-center">Translate From Arabic To German</h2>
+  </div>
+  <div class="container-fluid text-light  rounded-bottom" style="height: 250px; background-color: #83552d;">
+  
+    <p class=" p1 ms-1 fs-5">Write and Translate <code class="text- fs-5" style="color:black;">Press Here</code> </p>
+
+      
+    <button id="myButton" type="button" class="btn btn-light ms-1"  data-bs-toggle="tooltip" data-bs-placement="right"  title="Copied">Copy</button>
+    
+    <textarea class="  mt-4 rounded-2 border-0 col-12" placeholder=" translate:" cols="170" rows="5"  name="" id=""></textarea>
+
+  </div>
+  <hr>
+
+
+<!-- ======================================================================= -->
+<div class="container_img2 container-fluid bg-info border " style="height: 50vh;"></div> <!-- container_img2 -->
+<hr>
+  <!--========================================================================================== -->
+  <div class="container-fluid  rounded " style="background-color: #83552d;">
+    <h2 class=" text-light p-3 text-center">Most Requested</h2>
+  </div>
+  <div class="container my-5 bg-light nony">
+
+    <div class="row row11" style="grid-column-gap: 142px;">
+      <div class="card card1  col-12 col-sm-6 col-md-3 activecard  " style="height: px;">
+        <img class="card-img-top " src="images/lili.jpg" alt="Card image" style="height: 450px;">
+        <div class="card-body">
+          <h5 class="card-title text-" style="display: inline-block;">Chocolata Cake</h5>
+          <a href="#" class="btn btn_card btn-" style="background-color: #9c6644;">buy now</a>
+          <p class="card-text text-">$30</p>
+        </div>
+      </div> 
+
+      <div class="card card1  col-12 col-sm-6 col-md-3 activecard  " style="height: px;">
+        <img class="card-img-top " src="images/lili2.jpg" alt="Card image" style="height: 450px;">
+        <div class="card-body">
+          <h5 class="card-title text-" style="display: inline-block;">Red velvet Cake</h5>
+          <a href="#" class="btn btn_card btn-" style="background-color: #9c6644;">buy now</a>
+          <p class="card-text text-">$35</p>
+        </div>
+      </div> 
+
+
+
+
+      <div class="card card1  col-12 col-sm-6 col-md-3 activecard  " style="height:px;">
+        <img class="card-img-top w-100" src="images/lili3.jpg" alt="Card image" style="height:450px;">
+        <div class="card-body">
+          <h5 class="card-title text-" style="display: inline-block;">Strawberry Cake</h5>
+          <a href="#" class="btn btn_card btn-" style="background-color: #9c6644;">buy now</a>
+          <p class="card-text text-">$30</p>
+        </div>
+      </div>
+      
+  
+
+      <div class="card card1 col-12 col-sm-6 col-md-3 activecard  " style="height: px;">
+        <img class="card-img-top w-100" src="images/lili4.jpg" alt="Card image" style="height: 450px;">
+        <div class="card-body">
+          <h5 class="card-title text-" style="display: inline-block;">Vanilla Cake</h5>
+          <a href="#" class="btn btn_card btn-" style="background-color: #9c6644;">buy now</a>
+          <p class="card-text text-">$25</p>
+        </div>
+      </div>
+
+      <div class="card card1 col-12 col-sm-6 col-md-3 activecard  " style="height: px;">
+        <img class="card-img-top w-100" src="images/lili5.jpg" alt="Card image" style="height: 450px;">
+        <div class="card-body">
+          <h5 class="card-title text-" style="display: inline-block;">Cheesecake</h5>
+          <a href="#" class="btn btn_card btn-" style="background-color: #9c6644;">buy now</a>
+          <p class="card-text text-">$40</p>
+        </div>
+      </div>
+
+      <div class="card card1 col-12 col-sm-6 col-md-3 activecard " style="height:px;">
+        <img class="card-img-top w-100" src="images/lili6.jpg" alt="Card image" style="height: 450px;">
+        <div class="card-body">
+          <h5 class="card-title text-" style="display: inline-block;">Orea Cake</h5>
+          <a href="#" class="btn btn_card btn-" style="background-color: #9c6644;">buy now</a>
+          <p class="card-text text-">$30</p>
+        </div>
+      </div>
+
+      <div class="row row11" style="justify-content: space-around;">
+
+      <div class="card card1 col-12 col-sm-6 col-md-3 activecard  " style="height:px;">
+        <img class="card-img-top " src="images/lili7.jpg" alt="Card image" style="height: 450px;">
+        <div class="card-body">
+          <h5 class="card-title text-" style="display: inline-block;" >Lemon Cake</h5>
+          <a href="#" class="btn btn_card btn-"style="background-color: #9c6644;">buy now</a>
+          <p class="card-text text-">$28</p>
+        </div>
+      </div>
+
+
+      <div class="card card1 col-12 col-sm-6 col-md-3 activecard " style="height:px;">
+        <img class="card-img-top w-100" src="images/lili8.jpg" alt="Card image" style="height:450px;">
+        <div class="card-body" >
+          <h5 class="card-title text-" style="display: inline-block;">Choo Cake</h5>
+          <a href="#" class="btn btn_card btn-" style="background-color: #9c6644;">buy now</a>
+          <p class="card-text text-">$32</p>
+        </div>
+      </div>
+    </div>
+    </div> <!-- row -->
+  </div>
+<!-- ============================================================================================================================================================ -->
+<div class="container_img1 container-fluid bg-info border " style="height: 50vh;"></div> <!-- container_img2 -->
+<hr>
+<!-- ============================================================================================================= -->
+
+<div class="container-fluid  rounded " style="background-color: #83552d;">
+  <h2 class=" text-light p-3 text-center">THANKS FOR</h2>
+</div>
+          
+    <div class="container mt-5 holl">
+
+      <div class="row row11 " style="justify-content: space-evenly;">
+
+        <div class="card imgthree-fluid  col-12 col-sm-6 col-md-3  rounded-4" style="height:500px;">
+          <img class="card-img-top " src="images/f666.jpg" alt="Card image" style="height: 500px;">
+          <div class="card-img-overlay">
+            <div class="parent">
+            <p class="p_overlay card-text fs-5 text-" style="color:white;">All Thanks and Appreciation</p>
+            <i class="i_overlay far fa-clock fs-6 text-" style="color:white;">  Novaber 5, 1985 </i>
+        <div class="pill " ></div>
+        <p class="text- ms-3" style="color:white;">Ryan Jackson
+          <br>The older brother <br>"The founder of Kickstar"
+        </p>
+        </div> <!-- parent -->
+          </div> <!-- card-img-overlay -->
+        </div> <!-- card -->
+
+        <div class="card imgthree-fluid col-12 col-sm-6 col-md-3  rounded-4" style="height:500px;">
+          <img class="card-img-top " src="images/f666.jpg" alt="Card image" style="height:500px;">
+          <div class="card-img-overlay">
+            <div class="parent">
+            <p class="p_overlay card-text fs-5 text-" style="color:white;">All Thanks and Appreciation</p>
+            <i class="i_overlay far fa-clock fs-6 text-" style="color:white;">  January 5, 1991 </i>
+        <div class="pill pill2" ></div>
+        <p class="text- ms-3" style="color:white;"> Emma Jackson<br>The middle sister<br> "She took Kickstar global"</p>
+        </div> <!-- parent -->
+          </div> <!-- card-img-overlay -->
+        </div> <!-- card -->
+
+        <div class="card imgthree-fluid col-12 col-sm-6 col-md-3  rounded-4" style="height:500px;">
+          <img class="card-img-top " src="images/f666.jpg" alt="Card image" style="height: 500px;">
+          <div class="card-img-overlay">
+            <div class="parent">
+            <p class="p_overlay card-text fs-5 text-" style="color:white;">All Thanks and Appreciation</p>
+            <i class="i_overlay far fa-clock fs-6 text-" style="color:white;">  October 11, 1997</i>
+        <div class="pill pill3" ></div>
+        <p class="text- ms-3" style="color:white;">Jack Jackson<br>"The younger brother<br> "The current owner"</p>
+        </div> <!-- parent -->
+          </div> <!-- card-img-overlay -->
+        </div> <!-- card -->
+      </div> <!-- row -->
+    </div> <!-- container -->
+
+
+
+
+     
+
+
+    <h2 class="mt-5 " style="text-align: center;">Wedding Cake</h2>
+          <div class="container con_clip">
+          <div class="card  card_clip shadow-lg m-auto" style="max-width:90%; background-color: rgb(228, 222, 222);" >
+            <div class="row g-0 row_img">
+              <div class=" col-md-8 order-md-1 order-sm-2 order-2">
+                <div class="card-body  ">
+                  <h5 class="card-title">Alex & Yara</h5>
+                  <i class="fas fa-calendar-alt i_clip">mon, may 25th 2024</i>
+                  <div class="line_title1  " ></div>
+                  <div class="forafterapt"></div>
+                  <br>
+                  <p class="card-text">Alex and his wife Yara were extremely happy with their experience at our store. They were looking for a unique and beautiful wedding cake, and when they saw our diverse and stunning collection, they found the perfect cake that matched their tastes. They enjoyed the process of selecting the cake, as the service was friendly and accommodating, allowing them to easily customize their design. After the event, they had nothing but positive feedback about the cake's quality and their satisfaction with our excellent service.</p>
+                  <br><br><br>
+                  <button class=" btn_news1 border rounded-2 "><i class="fas fa-tag"></i> Photos</button>
+                  <button class="btn_news1 border rounded-2 "><i class="fas fa-clock"></i> 55 mins</button>
+                  <button class="btn_news1 btn_news2 border rounded-2 "><i class="fas fa-play"></i> Episode</button>
+                </div>
+              </div>
+              <div class=" img_card_r col-md-4 order-md-1 order-sm-1 order-1">
+                <img src="images/pr1.jpg" class=" img_card_r img-fluid rounded-end w-100 " style="height:100%;" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <div class="container con_clip">
+          <div class="card  card_clip shadow-lg m-auto" style="max-width:90%; background-color: rgb(228, 222, 222);" >
+            <div class="row g-0 ">
+              <div class="col-md-4 img_clip_l">
+                <img src="images/lo00.jpg" class=" img_clip_l img-fluid rounded-start w-100 "  style="height:100%; "alt="...">
+                <!-- 373 -->
+              </div>
+              <div class="col-12 col-sm-6 col-md-8 ">
+                <div class="card-body ">
+                  <h5 class="card-title">James & Mayara</h5>
+                  <i class="fas fa-calendar-alt i_clip">tues, jun 24th 2024</i>
+                  <div class="forafterapt"></div>
+                  <div class="line_title1  " ></div>
+                  <br>
+                  <p class="card-text">James and his wife Mayara were extremely happy with their experience at our store. <br>They chose their wedding cake from us, which was beautifully decorated with red and white flowers.<br> They enjoyed the selection process, as the service was excellent and helped them customize the cake to their liking.<br>After the event, they mentioned that the cake was outstanding and praised the quality of the service.<br> It was an unforgettable experience for them!We were very happy to serve them, and some of our crew attended the wedding due to the bond and friendship that developed between us. It was truly a wonderful wedding; they are the best. We wish them a happy life.</p>
+                  <br>
+                  <button class=" btn_news1 border rounded-2 "><i class="fas fa-tag"></i> Photos</button>
+                  <button class="btn_news1 border rounded-2 "><i class="fas fa-clock"></i> 45 mins</button>
+                  <button class="btn_news1 btn_news2 border rounded-2 "><i class="fas fa-play"></i> Episode</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+          <div class="container con_clip mt-4">
+          <div class="card  card_clip shadow-lg m-auto" style="max-width: 90%; background-color: rgb(228, 222, 222);height:px;" >
+            <div class="row g-0 row_img">
+              
+              <div class=" col-md-8 order-md-1 order-sm-2 order-2">
+                <div class="card-body  ">
+                  <h5 class="card-title">John & Bella</h5>
+                  <i class="fas fa-calendar-alt i_clip">mon,oct 21th 2023</i>
+                  <div class="line_title1  " ></div>
+                  <div class="forafterapt"></div>
+                  <br>
+                  <p class="card-text">John and his wife Bella were extremely happy with their experience at our store. They chose their wedding cake from us, which was beautifully decorated with white, red, and pink flowers. They enjoyed the selection process, as the service was excellent and helped them customize the cake to their liking. After the event, they praised the taste and high quality of the cake. It was a memorable experience for them!</p>
+                  <br><br><br>
+                  <button class=" btn_news1 border rounded-2 "><i class="fas fa-tag"></i> Photos</button>
+                  <button class="btn_news1 border rounded-2 "><i class="fas fa-clock"></i> 50 mins</button>
+                  <button class="btn_news1 btn_news2 border rounded-2 "><i class="fas fa-play"></i> Episode</button>
+                </div>
+              </div>
+              <div class=" img_card_r col-md-4 order-md-1 order-sm-1 order-1">
+                <img src="images/pr2.jpg" class=" img_card_r img-fluid rounded-end w-100 "style="height:100%;" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <div class="container con_clip">
+          <div class="card  card_clip shadow-lg m-auto" style="max-width: 90%; background-color: rgb(228, 222, 222);" >
+            <div class="row g-0 ">
+              <div class="col-md-4 img_clip_l">
+                <img src="images/koop.jpg" class=" img_clip_l img-fluid rounded-start w-100 "style="height:100%;" alt="...">
+              </div>
+              <div class="col-12 col-sm-6 col-md-8 ">
+                <div class="card-body ">
+                  <h5 class="card-title">Jack & Ella</h5>
+                  <i class="fas fa-calendar-alt i_clip">wed, jul 19th 2023</i>
+                  <div class="forafterapt"></div>
+                  
+                  <div class="line_title1" ></div>
+                  <br>
+                  <p class="card-text">Jack and his wife Ella were extremely happy with their experience at our store. <br>They chose their wedding cake from us, and it was truly excellent! It was beautifully decorated with orange, beige, and deep red flowers. They enjoyed the selection and customization process, and our team was very helpful.<br> After the event, they praised the taste and high quality of the cake, making it a memorable experience for them!We were very happy to serve them, and some of our crew attended the wedding due to the bond and friendship that developed between us. It was truly a wonderful wedding; they are the best. We wish them a happy life.</p>
+                  <br>
+                  <button class=" btn_news1 border rounded-2 "><i class="fas fa-tag"></i> Photos</button>
+                  <button class="btn_news1 border rounded-2 "><i class="fas fa-clock"></i> 60 mins</button>
+                  <button class="btn_news1 btn_news2 border rounded-2 "><i class="fas fa-play"></i> Episode</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+    <h2 class="text-center  mom mt-5">JOIN US</h2>
+       
+    <div class="container " >
+    <div class="row text-center" style="justify-content: space-evenly; grid-row-gap: 30px;">
+      <div class="div1 border rounded-1 text-center shadow-lg bg-light col-12 col-sm-6 col-md-4 col-lg-3" style="width: 250px;" >
+        <h4 class="text-center mt-2" >Subscribe Now</h4> 
+        <img class="img_footer mb-2 shadow-lg border rounded-4" src="images/wt.jpg" alt=""> 
+        <p>Go to link</p>
+       </div>
+       <div class="div1 border rounded-1 text-center shadow-lg bg-light col-12 col-sm-6 col-md-4 col-lg-3" style="width: 250px;" >
+         <h4 class="text-center mt-2" >Follow</h4> 
+        <img class="img_footer mb-2 shadow-lg bg-dark border rounded-4" src="images/watss.png" alt=""> 
+        <p>Go to link</p>
+       </div>
+       <div class="div1 border rounded-1 text-center shadow-lg bg-light col-12 col-sm-6 col-md-4 col-lg-3" style="width: 250px;" >
+        <h4 class="text-center mt-2" >Like the page</h4> 
+       <img class="img_footer mb-2 shadow-lg bg-info border rounded-4" src="images/ink.jpg" alt=""> 
+       <p>Go to link</p>
+      </div>
+      <div class="div1 border rounded-1 text-center shadow-lg bg-light col-12 col-sm-6 col-md-4 col-lg-3" style="width: 250px;" >
+        <h4 class="text-center mt-2" >Watch videos</h4> 
+       <img class="img_footer mb-2 shadow-lg bg-dark border rounded-4" src="images/ins.jpg" alt=""> 
+       <p>Go to link</p>
+      </div>
+    </div> <!-- row -->
+  </div> <!-- container -->
+  <br>
+
+
+
+
+
+  <div class="container-fluid footer  " style=" background-color:#83552d;">
+      
+    <div class="row">
+      <div class="col mt-2 text-center">
+        <div class="fline  border col-3 ms-3" style="width: 400px; height: 2px; color: rgb(207, 203, 203);"></div>
+        <img class="border rounded-circle  bg-light m-2 "  src="images/iv.jpg" alt="#"  width="60px" height="60px">
+      <h5  style="display: inline; color: white;" >Good Company</h5>
+      <div class="lline   border col-3 ms-3 " style="width: 400px; height: 2px; color: rgb(207, 203, 203);"></div>
+      <p class="text-center text-light">Tel: 0000 000 0000</p>
+     <p class="text-center text-light">Address: Palestine</p> 
+      <p class="text-center text-light">Fax: 000000000000</p>
+      </div> 
+      <div class="col mt-2 text-center">
+        <div class="fline  border   col-3 ms-3" style="width: 400px; height: 2px; color: rgb(207, 203, 203);"></div>
+        <img class="border rounded-circle  bg-light m-2" src="images/iv2.jpg" alt="#"  width="60px" height="60px">
+      <h5 class=" " style="display: inline; color: white;">Important Links</h5>
+      <div class="lline  border col-3 ms-3" style="width: 400px; height: 2px; color: rgb(207, 203, 203);"></div>
+      <p class=" p_footer text-center ">Visit us</p>
+     <p class="p_footer text-center ">Take alook</p> 
+      <p class="p_footer text-center ">your health is more important</p>
+      </div>
+      
+      <div class="col mt-2 text-center">
+        <div class="fline  border   col-3 ms-3" style="width:400px; height: 2px; color: rgb(207, 203, 203);"></div>
+        <img class="border rounded-circle bg-light m-2 " src="images/iv3.jpg" alt="#"  width="60px" height="60px">
+      <h5 class=" " style="display: inline; color: white;"> Future Vision</h5>
+      <div class="lline  border col-3 ms-3" style="width: 400px; height: 2px; color: rgb(207, 203, 203);"></div>
+      <p class="text-center text-light">Services for all</p>
+     <p class="text-center text-light">Provide best Services</p> 
+      <p class="text-center text-light">You will be better than before</p>
+      </div>
+    </div>
+    <hr>
+    <p class="text-center fs-5" style="text-transform: uppercase; color:burlywood;">Copyright &copy; 2024  Mariam Ahmed good company. All Rights</p> 
+    <hr>
+    <br><br>
+</div>
+
+
+
+
+
+
+
+
+
+    
+  
+    <!--<h2 class="mt-5 mom" style="text-align: center;">Join Us</h2>
+
+
+    <div class="div-social row" style="grid-column-gap: 110px;">
+      <div class="tiwttter men  col-4 col-sm-6 col-md-3 ">
+       <h3>Subscribe Now</h3>
+        <i class="fa-brands fa-twitter it"></i>
+        <p>Go To Link</p>
+
+      </div>
+      <div class="waths-up men  col-4 col-sm-6 col-md-3">
+        <h3>Follow</h3>
+        <i class="fa-brands fa-whatsapp iw"></i>
+        <p>Go To Link</p>
+      </div>
+      <div class="linkedin men col-4 col-sm-6 col-md-3 ">
+        <h3>Like The Page</h3>
+        <i class="fa-brands fa-linkedin-in il"></i>
+        <p>Go To Link</p>
+
+      </div>
+      <div class="instgram men col-4 col-sm-6 col-md-3 ">
+        <h3>Watch Videos</h3>
+        <i class="fa-brands fa-instagram ii"></i>
+       <p>Go To Link</p> 
+      </div>
+    </div>
+
+
+
+      <div class="div-last row"  style="grid-column-gap:160px;">
+      <div class="divl1 col-12 col-sm-6 col-md-3">
+        <hr>
+        <img src="images/logoot.jpg" class="rounded-circle" alt="Cinque Terre" height="55px" width="55px">
+        <span>good company</span>
+        <hr>
+        <p>Tel:000-000-000</p>
+        <p>Address:EYGPT</p>
+        <P>Fax:00-00-000</P>
+      </div>
+      <div class="div divl2 col-12 col-sm-6 col-md-3">
+        <hr>
+        <img src="images/logoot.jpg" class="rounded-circle" alt="Cinque Terre" height="55px" width="55px">
+        <span>important links </span>
+        <hr>
+        <p class="f4">Visit Us</p>
+        <p class="f4">Take alook</p>
+        <P class="f4">Your health is more important</P>
+      
+
+
+      </div>
+      <div class="divl3 col-12 col-sm-6 col-md-3">
+        <hr>
+        <img src="images/logoot.jpg" class="rounded-circle" alt="Cinque Terre" height="55px" width="55px">
+        <span>vision</span>
+        <hr>
+        <p>Serverices for all</p>
+        <p>Provido best Serverices</p>
+        <P>you will be better than before</P>
+    
+      </div>
+    </div>  
+
+
+    <div class="container-fluid footer  " style=" background-color: rgb(54, 141, 146);">
+      
+      <div class="row">
+        <div class="col mt-2 text-center">
+          <div class="fline  border col-3 ms-3" style="width: 400px; height: 2px; color: rgb(207, 203, 203);"></div>
+          <img class="border rounded-circle  bg-light m-2 "  src="./images/palestine.png" alt="#"  width="60px" height="60px">
+        <h5  style="display: inline; color: white;" >Good Company</h5>
+        <div class="lline   border col-3 ms-3 " style="width: 400px; height: 2px; color: rgb(207, 203, 203);"></div>
+        <p class="text-center text-light">Tel: 0000 000 0000</p>
+       <p class="text-center text-light">Address: Palestine</p> 
+        <p class="text-center text-light">Fax: 000000000000</p>
+        </div> 
+        <div class="col mt-2 text-center">
+          <div class="fline  border   col-3 ms-3" style="width: 400px; height: 2px; color: rgb(207, 203, 203);"></div>
+          <img class="border rounded-circle  bg-light m-2" src="./images/palestine.png" alt="#"  width="60px" height="60px">
+        <h5 class=" " style="display: inline; color: white;">Important Links</h5>
+        <div class="lline  border col-3 ms-3" style="width: 400px; height: 2px; color: rgb(207, 203, 203);"></div>
+        <p class=" p_footer text-center ">Visit us</p>
+       <p class="p_footer text-center ">Take alook</p> 
+        <p class="p_footer text-center ">your health is more important</p>
+        </div>
+        
+        <div class="col mt-2 text-center">
+          <div class="fline  border   col-3 ms-3" style="width:400px; height: 2px; color: rgb(207, 203, 203);"></div>
+          <img class="border rounded-circle bg-light m-2 " src="./images/palestine.png" alt="#"  width="60px" height="60px">
+        <h5 class=" " style="display: inline; color: white;">Vision</h5>
+        <div class="lline  border col-3 ms-3" style="width: 400px; height: 2px; color: rgb(207, 203, 203);"></div>
+        <p class="text-center text-light">Services for all</p>
+       <p class="text-center text-light">Provide best Services</p> 
+        <p class="text-center text-light">You will be better than before</p>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center fs-5" style="text-transform: uppercase; color: rgb(73, 68, 68);">Copyright &copy; 2024 Asmaa Elsayed good company. All Rights</p> 
+      <hr>
+      <br><br>
+  </div>-->
+
+
+    <!-- <div class="line col-12 col-sm-12 col-md-12">
+      <hr>
+        <p class="PD11">COPYRIGHT &copy; 2024 ALL. RIGHT RESERVED BY COLORLIB</p>
+        <hr>
+    </div> -->
+
+
+
+  <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+
+  <script  src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+          <!-- <form class="d-flex">
+              <input class="form-control me-2  search1" type="text" placeholder="Search">
+              <button class="btn btn-dark  search2" type="button">Search</button>
+          </form>-->
+
+<!--<button type="button" class="btn btn-dark bj Login" data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary" data-bs-toggle="tooltip">
+  Login
+</button>
+<div class="modal Login" id="myModal"  style="z-index: 5000;" style="height:1000px;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    
+      <div class="modal-header  bgtitlle">
+        <h4 class="modal-title text-light">Login</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-header">
+        <p class="modal-title">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </p>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+    
+      <div class="modal-body">
+        <p class="modal-title">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </p>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+
+
+
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <label for="pwd" class="form-label">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+      </div>
+
+  
+      <div class="modal-footer">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="remember"> Remember me
+        </label>
+        <br>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Login</button>
+        <button type="submit" class="btn btn-dark  submit">Close</button>
+      </div>
+      <button type="submit" class="btn btn-dark  submit5">Close</button>
+      <button type="submit" class="btn btn-dark  submit55">Close</button>
+    </div>
+  </div>
+</div>-->
+
